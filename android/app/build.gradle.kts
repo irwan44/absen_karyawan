@@ -32,8 +32,8 @@ android {
         applicationId = "com.raw_absen"
         minSdk = 21
         targetSdk = 35
-        versionCode = 5
-        versionName = "4.2"
+        versionCode = 6
+        versionName = "5.2"
     }
 
     ndkVersion = "27.0.12077973"

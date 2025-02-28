@@ -615,8 +615,12 @@ class _HomeViewState extends State<HomeView>
                                                           0xFFF8B003,
                                                         ),
                                               ),
+                                              // Logika: tombol aktif jika absen masuk sudah selesai dan belum absen pulang & tidak loading
                                               onPressed:
-                                                  controller
+                                                  !controller
+                                                              .isAbsenMasukDone
+                                                              .value ||
+                                                          controller
                                                               .isAbsenPulangDone
                                                               .value ||
                                                           controller
